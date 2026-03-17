@@ -1,0 +1,52 @@
+{
+  "name": "Farm",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "lng": {
+      "type": "number"
+    },
+    "produce_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Types of produce/products grown"
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "e.g. Organic, Non-GMO"
+    },
+    "website": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "lat",
+    "lng"
+  ]
+}
