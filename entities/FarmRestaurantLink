@@ -1,0 +1,26 @@
+{
+  "name": "FarmRestaurantLink",
+  "type": "object",
+  "properties": {
+    "restaurant_id": {
+      "type": "string"
+    },
+    "farm_id": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "What ingredients are sourced from this farm"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "restaurant_id",
+    "farm_id"
+  ]
+}
